@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meu Portifólio</title>
+
+  <!-- bootstrap css cdn link  -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+
+  <!-- custom css file -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- google font link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+
+  <!-- bootstrap icon cdn link  -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css" />
+
+  <!-- for adding animation to website we have used AOS library 
+    AOS Library css file cdn link -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <!-- jquery cdn link  -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <head>
+    <style>
+      .social-links button:focus, 
+      .social-links a:focus {
+        outline: none;
+      }
+    </style>
+  </head>
+  
+
+</head>
+
+<body>
+  <!-- navbar starts -->
+  <header>
+    <nav id="navbar-top" class="navbar navbar-expand-lg navbar-light bg-white">
+      <div class="container-fluid px-5">
+        <a class="navbar-brand fw-bold fs-3" href="#" style="color: #3f396d">Portifólio</a>
+        <button class="nav-menu d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <i class="bi bi-menu-button-fill"></i>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+          <ul class="navbar-nav gap-4" style="font-size: 1.1rem">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Início</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#service">Serviços</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">Sobre mim</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">Portifólio</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <button class="c-btn ms-4 py-2 px-4 rounded-pill d-none d-md-block button-contact">
+              <a href="#contact">Contato</a>
+          </button>
+      </div>
+      
+    </nav>
+  </header>
+  <!-- navbar ends here -->
+
+  <!-- home section starts  -->
+  <section class="home pt-5 pb-5" id="home">
+    <div class="row justify-content-evenly align-middle">
+      <!-- here data-aos is used for adding aos animation  -->
+      <div class="col-10 col-md-6 text-center text-md-start" data-aos="slide-right">
+        <h2 style="color: #3f396d">
+          Olá, sou<br /><span class="c-orange">Álan Ômni</span>
+        </h2>
+        <p class="text-muted">
+          Sou um designer gráfico e digital com experiência em UX/UI, criando soluções visuais e interfaces intuitivas para websites, aplicativos e outras plataformas, sempre com foco na experiência do usuário.
+        </p>
+        <button class="c-btn h-btn mt-3 py-2 px-4 rounded-pill">
+          <a href="https://wa.link/xo1dcs" target="_blank" class="me-contrate-btn">
+            Me contrate
+          </a>
+        </button>
+        
+        
+        
+        <a href="#about" class="link ms-4">Saiba Mais</a>
+      </div>
+      <div class="col-10 col-md-4 d-none d-md-block">
+        <img src="fotinhamelhorada.png" class="img-fluid" alt="" />
+      </div>
+    </div>
+  </section>
+  <!-- home section ends here -->
+
+  <!-- expertise section starts -->
+  <section class="expertise mt-5" id="service">
+    <div class="heading text-center">
+      <small>Meus Serviços</small>
+      <h3>
+        Oferecendo Soluções Digitais Inovadoras
+      </h3>
+    </div>
+    <div class="row justify-content-evenly mt-5">
+      <div class="col-10 col-md-4" data-aos="fade-up">
+        <div class="service-card">
+          <div class="img">
+            <img src="service-icon1.png" class="w-25 img-fluid img" alt="" />
+          </div>
+          <div class="content mt-3">
+            <h4>Design Gráfico</h4>
+            <p class="text-muted">
+              Criando soluções visuais impactantes e designs gráficos que atendem às necessidades de cada cliente.
+            </p>
+           
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-10" data-aos="fade-up">
+        <div class="service-card">
+          <div class="img">
+            <img src="service-icon2.png" class="w-25 img-fluid img" alt="" />
+          </div>
+          <div class="content mt-3">
+            <h4>Desenvolvimento Web</h4>
+            <p class="text-muted">
+              Criação de websites responsivos, otimizados e funcionais em qualquer dispositivo.
+            </p>
+           
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-10" data-aos="fade-up">
+        <div class="service-card">
+          <div class="img">
+            <img src="service-icon3.png" class="w-25 img-fluid img" alt="" />
+          </div>
+          <div class="content mt-3">
+            <h4>Experiência de Usuário (UX/UI)</h4>
+            <p class="text-muted">
+              Desenvolvimento de interfaces intuitivas e experiências de usuário excepcionais.
+            </p>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- expertise section ends here -->
+
+  <!-- skill section starts -->
+  <section class="skill mt-5 py-5" id="about">
+    <div class="row justify-content-evenly">
+      <div class="col-10 col-md-5 skill-with-progress" data-aos="slide-right">
+        <div class="row justify-content-evenly">
+          <div class="col-10 col-md-6">
+            <div class="progress-card ms-3 ms-md-0">
+              <div class="circular-progress html">
+                <span class="progress-value html-progress">0%</span>
+              </div>
+              <br />
+              <span class="text">HTML</span>
+            </div>
+          </div>
+          <div class="col-10 col-md-6 mt-4 mt-md-0">
+            <div class="progress-card ms-3 ms-md-0">
+              <div class="circular-progress css">
+                <span class="progress-value css-progress">0%</span>
+              </div>
+              <br />
+              <span class="text">CSS</span>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-evenly mt-4">
+          <div class="col-10 col-md-6">
+            <div class="progress-card ms-3 ms-md-0">
+              <div class="circular-progress javascript">
+                <span class="progress-value javascript-progress">0%</span>
+              </div>
+              <br />
+              <span class="text">JavaScript</span>
+            </div>
+          </div>
+          <div class="col-10 col-md-6 mt-4 mt-md-0">
+            <div class="progress-card ms-3  ms-md-0">
+              <div class="circular-progress reactjs">
+                <span class="progress-value reactjs-progress">0%</span>
+              </div>
+              <br>
+              <span class="text">UX/UI Design</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-10 col-md-5 skill-detail" data-aos="slide-left">
+        <div class="heading mt-5 mt-md-3">
+          <small>Minhas Habilidades</small>
+          <h3>Sobre Mim & Minhas Experiências</h3>
+          <p class="text-muted">
+            Sou designer gráfico e digital, especializado em criar experiências visuais incríveis e sites responsivos utilizando HTML, CSS e JavaScript.
+
+
+          </p>
+          <p class="text-muted">
+            Já desenvolvi uma ampla variedade de projetos, desde sites para negócios até plataformas de entretenimento e educação, sempre focando na qualidade e na funcionalidade.
+          </p>
+          <button class="c-btn h-btn mt-3 py-2 px-4 rounded-pill">
+            <!-- here download attribute is used for adding download functionality to button  -->
+            <a href="https://drive.google.com/file/d/1b6C9QnmI66yrnrGpXW3kYjs7gyw6G6Tj/view" download="SampleCV" style="text-decoration: none;color: #fff;">Baixar CV</a>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- skill section end here -->
+
+  <!-- portfolio section starts here -->
+  <section class="portfolio" id="portfolio">
+    <div class="heading text-center pt-5">
+      <small>Trabalhos Profissionais</small>
+      <h3>Explore Meu Portfólio</h3>
+    </div>
+
+    <div id="myBtnContainer" class="text-center mt-4">
+      <!-- here we will create custom attribute using data- for filtering -->
+      <button class="filter-item" data-filter="all">Todos</button>
+      <button class="filter-item" data-filter="website">Website</button>
+      <button class="filter-item" data-filter="webdesign">Design Gráfico</button>
+      <button class="filter-item" data-filter="app">App</button>
+    </div>
+    <div class="portfolio-body">
+      <div class="row justify-content-evenly px-4">
+        <div class="post col-md-4 all website all col-10 mt-3 mt-md-0" data-aos="fade-up">
+          <div class="card">
+            <img src="MATHMASTER.png" class="card-img-top" alt="..." />
+            <div class="card-body text-center">
+              <h4 class="card-title">Math Master</h4>
+              <span class="badge bg-secondary badge-pill">HTML&CSS</span>
+              <span class="badge bg-secondary badge-pill">JavaScript</span>
+              <span class="badge bg-secondary badge-pill mb-2">Website</span><br />
+              <a href="https://mathmaster-ofc.netlify.app/" class="link">Visualizar</a>
+            </div>
+          </div>
+        </div>
+        <div class="post col-md-4 all webdesign all col-10 mt-3 mt-md-0" data-aos="fade-up">
+          <div class="card">
+            <img src="DESIGN GRAFICO 2.png" class="card-img-top" alt="..." />
+            <div class="card-body text-center">
+              <h4 class="card-title">Casemiro Red Devil</h4>
+              <span class="badge bg-secondary badge-pill">Gimp</span>
+              <span class="badge bg-secondary badge-pill">Design Gráfico</span>
+              <span class="badge bg-secondary badge-pill mb-2">Edição</span><br />
+              <a href="https://imgur.com/a/qaCrtMv" class="read-more-btn link">Visualizar</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-evenly mt-4 px-4">
+        <div class="post col-md-4 all webdesign all col-10 mt-3 mt-md-0" data-aos="fade-up">
+          <div class="card">
+            <img src="DESIGN GRAFICO 1.png" class="card-img-top" alt="..." />
+            <div class="card-body text-center">
+              <h4 class="card-title">Pedro Raul no Vozão</h4>
+              <span class="badge bg-secondary badge-pill">Gimp</span>
+              <span class="badge bg-secondary badge-pill">Design Gráfico</span>
+              <span class="badge bg-secondary badge-pill mb-2">Edição</span><br />
+              <a href="https://imgur.com/a/X9M9flS" class="read-more-btn link">Visualizar</a>
+            </div>
+          </div>
+        </div>
+        <div class="post col-md-4 all website all col-10 mt-3 mt-md-0" data-aos="fade-up">
+          <div class="card">
+            <img src="color cliker.png" class="card-img-top" alt="..." />
+            <div class="card-body text-center">
+              <h4 class="card-title">Color Cliker</h4>
+              <span class="badge bg-secondary badge-pill">HTML&CSS</span>
+              <span class="badge bg-secondary badge-pill">JavaScript</span>
+              <span class="badge bg-secondary badge-pill mb-2">Website</span><br />
+              <a href="https://color-cliker.netlify.app/" class="read-more-btn link">Visualizar</a>
+            </div>
+          </div>
+        </div>
+        <div class="post col-md-4 all website col-10 mt-3 mt-md-0" data-aos="fade-up">
+          <div class="card">
+            <img src="advinhar numero.png" class="card-img-top" alt="..." />
+            <div class="card-body text-center">
+              <h4 class="card-title">Adivinhar número</h4>
+              <span class="badge bg-secondary badge-pill">HTML&CSS</span>
+              <span class="badge bg-secondary badge-pill">JavaScript</span>
+              <span class="badge bg-secondary badge-pill mb-2">Website</span><br />
+              <a href="#" class="read-more-btn link">Visualizar</a>
+            </div>
+          </div>
+        </div>
+       <div class="post col-md-4 all app col-10 mt-3 mt-md-0" data-aos="fade-up">
+  <div class="card">
+    <img src="eco track 2.png" class="card-img-top" alt="..." />
+    <div class="card-body text-center">
+      <h4 class="card-title">EcoTrack</h4>
+      <span class="badge bg-secondary badge-pill">Mobile</span>
+      <span class="badge bg-secondary badge-pill">Figma</span>
+      <span class="badge bg-secondary badge-pill mb-2">App</span><br />
+      <a href="https://www.figma.com/design/D4VffY4ozs47BFCXO34WID/Untitled?node-id=0-1&t=UxFvu3Hu7L2H4qll-1" class="read-more-btn link">Visualizar</a>
+    </div>
+  </div>
+</div>
+<div class="row justify-content-evenly mt-4 px-4">
+  <!-- Card EcoTrack no formato correto -->
+  <div class="post col-md-4 all website col-10 mt-3 mt-md-0" data-aos="fade-up">
+    <div class="card">
+      <!-- Adicionando classes de estilo à imagem -->
+      <img src="eco track 2.png" class="card-img-top img-fluid" alt="EcoTrack Projeto" />
+      <div class="card-body text-center">
+        <h4 class="card-title">EcoTrack</h4>
+        <span class="badge bg-secondary badge-pill">HTML&CSS</span>
+        <span class="badge bg-secondary badge-pill">JavaScript</span>
+        <span class="badge bg-secondary badge-pill mb-2">App</span><br />
+        <a href="#" class="read-more-btn link">Ver mais</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+  <!-- Outros cards aqui, se necessário -->
+</div>
+
+        
+        
+      </div>
+    </div>
+  </section>
+  <footer class="text-center text-muted py-4">
+    <h3 class="text-white pt-4" data-aos="fade-up">Meu Portfólio</h3>
+    <div class="link-group mt-5" data-aos="fade-up">
+      <a href="#home">Início</a>
+      <div class="vr"></div>
+      <a href="#about">Sobre</a>
+      <div class="vr"></div>
+      <a href="#service">Serviços</a>
+      <div class="vr"></div>
+      <a href="#portfolio">Portifólio</a>
+    </div>
+    <div class="social-links mt-5" data-aos="fade-up">
+      <button class="rounded-pill dribble">
+        <a href="https://www.instagram.com/omn.1z_/" target="_blank"><i class="bi bi-instagram"></i></a>
+      </button>
+      <button class="rounded-pill whatsapp">
+        <a href="https://wa.link/xo1dcs" target="_blank"><i class="bi bi-whatsapp"></i></a>
+      </button>
+      <button class="rounded-pill behance">
+        <a href="#" target="_blank"><i class="bi bi-twitter"></i></a>
+      </button>
+    </div>
+    
+    
+    
+    <hr class="text-muted my-4" />
+
+    <p>&copy; 2025 Ômni. Todos os direitos reservados.
+    </p>
+  </footer>
+  <!-- footer section ends here -->
+
+  <!-- bootstrap javascript cdn link  -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+
+  <!-- AOS library javascript link  -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    // initializing AOS library
+    AOS.init({
+      duration: 1000,
+      offset: 50,
+    });
+  </script>
+  <script src="script.js"></script>
+
+</body>
+
+</html>

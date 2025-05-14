@@ -1,0 +1,482 @@
+/* appling google font over the website  */
+body{
+    font-family: 'poppins', sans-serif;
+    font-weight: 400;
+}
+/* styling menu icon */
+.nav-menu{
+    border: none;
+    background-color: #fff;
+    font-size: 1.5rem;
+    color: #fca61f;
+}
+/* styling navbar links  */
+.navbar-nav a{
+    color: black;
+    position: relative;
+}
+.navbar-nav a:hover{
+    color: #fca61f;
+}
+.navbar-nav a:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    top: 35px;
+    position: absolute;
+    background: #fca61f;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+.navbar-nav a:hover:after { 
+    width: 100%; 
+    left: 0; 
+  }
+  /* styling contact btn  */
+.c-btn{
+    border: none;
+    background: #fca61f;
+    color: #fff;
+    font-size: 1rem;
+}
+/* styling home section starts */
+.home{
+    background: linear-gradient(33deg, rgba(242,242,255,1) 0%, rgba(235,249,255,1) 100%);
+    padding: 30px 0px 20px 0px;
+}
+.home h2{
+    margin-top: 20px;
+    font-size: 3rem;
+    line-height: 4rem;
+}
+.c-orange{
+    color: #6f34fe;
+    font-weight: 700;
+    font-size: 4rem;
+}
+.home p{
+    width: fit-content;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+}
+.h-btn:hover{
+    background: #6f34fe;
+    color: #fff;
+    transform: translateY(-20px);
+    transition-duration: 1s;
+}
+.link{
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #fca61f;
+    position: relative;  
+}
+.link::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    top: 20px;
+    background-color: #6f34fe;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+.link:hover{
+    color: #6f34fe;
+}
+.link:hover::after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+/* adding animation to home section image  */
+.home img{
+    animation: floatimg 4s ease-in-out infinite;
+}
+
+@keyframes floatimg {
+    0%{
+        transform: translateX(0);
+    }
+    50%{
+        transform: translateX(-24px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+/* expertise section starts */
+.heading small{
+    color: #6f34fe;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.heading h3{
+    margin-top: 0.5rem;
+    color: #3f396d;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+.expertise h4{
+    color: #3f396d;
+    font-weight: 700;
+}
+.expertise a{
+    text-decoration: none;
+    color: #fca61f;
+}
+.expertise a:hover{
+    color: #6f34fe;
+}
+.expertise .service-card{
+    text-align: center;
+    padding: 15px 15px;
+    border-radius: 0.7rem;
+}
+
+/* skill section starts */
+.skill{
+    background-color: rgb(234, 234, 249);
+}
+.progress-card{
+    padding: 12% 10% 10% 15%;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 10%;
+}
+.progress-card:hover{
+    transform: scale(1.1,1.1);
+    transition-duration: 0.6s;
+}
+.circular-progress{
+    position: relative;
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+    background: conic-gradient(#7d2ae8 3.6deg, #ededed 0deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.circular-progress::before{
+    content: "";
+    position: absolute;
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+.progress-value{
+    position: relative;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.html-progress{
+    color: #fca61f;
+}
+.javascript-progress{
+    color: #6f34fe;
+}
+.php-progress{
+    color: #20c997;
+}
+.reactjs-progress{
+    color: #3f396d;
+}
+.text{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.heading p{
+    font-size: 1.3rem;
+}
+
+/* portfolio section starts */
+#myBtnContainer{
+    margin-bottom: 45px;
+}
+#myBtnContainer button{
+  border: none;
+  color: black;
+  background: transparent;
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;   
+  display: inline-block;
+  margin: 0 25px;
+}
+#myBtnContainer button:hover{
+    color: #fca61f;
+}
+
+#myBtnContainer button:focus{
+    outline: none;
+}
+.post .content h4{
+    font-size: 1rem;
+    font-weight: 700;
+}
+.post .card{
+    border: none;
+}
+
+/* testimonial section starts */
+.testimonial img:hover{
+    transform: scale(1.2,1.2);
+    transition-duration: 1s;
+}
+.testimonial h4{
+    color: #3f396d;
+}
+.testimonial i{
+    font-size: 2.9rem;
+    color: #fca61f;
+    
+}
+.testimonial .nextprev-btn{
+    border: none;
+    background-color: #fff;
+}
+.prev:hover,.prev-btn:hover{
+    color:#6f34fe;
+    transform: translateX(-10px);
+    transition-duration: 1s;
+}
+.next:hover,.next-btn:hover{
+    color:#6f34fe;
+    transform: translateX(10px);
+    transition-duration: 1s;
+}
+
+/* styling modal group  */
+.btn-c{
+    margin-left: 94%;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 2rem;
+    margin-top: -3%;
+}
+.btn-c i{
+    color: #fca61f;
+}
+.modal-body .content span{
+    font-size: 1rem;
+}
+.modal-body .content small{
+    font-size: 1rem;
+    color: #6f34fe;
+}
+/* contact section starts */
+.contact{
+    background-color: #f3f3f3;
+}
+.contact-details i{
+    font-size: 1.5rem;
+    color: #fca61f;
+}
+.contact-details p{
+    font-size: 1.2rem;
+    margin-left: 1rem;
+}
+.contact-form .form-control:focus{
+    box-shadow: none;
+    border: 1px solid #fca61f;
+}
+.contact-form .form-control{
+    padding: 10px 10px;
+    width: 80%;
+}
+
+/* footer section starts */
+footer{
+    background-color: #211e39;
+}
+
+footer .link-group a{
+    margin-left: 10px;
+    margin-right: 10px;
+    text-decoration: none;
+    color: #6c757d;
+    font-size: 1.1rem;
+    margin-top: 1rem;
+}
+footer .link-group a:hover{
+    color: #fca61f;
+}
+.social-links button{
+    border: none;
+    margin-right: 1rem;
+    font-size: 1.2rem;
+    background-color: #fff;
+    padding: 14px 15px 10px 15px;
+}
+.social-links .dribble{
+    color: #f33a7e;
+}
+.social-links button:hover{
+    color: #fff;
+    transform: translateY(-20px);
+    transition-duration: 1s;
+}
+.social-links .dribble:hover{
+    background-color: #f33a7e;
+}
+.social-links .whatsapp{
+    color: #25D366;
+}
+.social-links .whatsapp:hover{
+    background-color: #25D366;
+}
+.social-links .behance{
+    color: #255afc;
+}
+.social-links .behance:hover{
+    background-color: #255afc;
+}
+.post {
+    visibility: visible; /* Garante que os itens não fiquem invisíveis */
+    opacity: 1; /* Garante que eles não fiquem transparentes */
+    transition: opacity 0.5s ease-in-out; /* Efeito suave de transição */
+  }
+  /* Estilo do botão específico para contato */
+.button-contact {
+    display: inline-block;
+    background-color: #6f34fe; /* Cor de fundo do botão */
+    color: white; /* Cor do texto */
+    text-decoration: none; /* Remove o sublinhado */
+    border: 2px solid transparent; /* Remove qualquer borda */
+    border-radius: 50px; /* Bordas arredondadas */
+    padding: 10px 20px; /* Padding (espaçamento interno) */
+    font-size: 16px; /* Tamanho da fonte */
+    transition: all 0.3s ease; /* Transição suave para as mudanças */
+  }
+  
+  /* Remove o sublinhado do link dentro do botão */
+  .button-contact a {
+    color: white; /* Cor do texto do link */
+    text-decoration: none; /* Remove sublinhado */
+  }
+  
+  /* Efeito de hover */
+  .button-contact:hover {
+    background-color: #fca61f; /* Cor de fundo ao passar o mouse */
+    border-color: #f7f7f7; /* Cor da borda ao passar o mouse */
+    transform: scale(1.1); /* Aumenta o tamanho do botão */
+  }
+  
+  /* Efeito de foco (quando o botão está ativo) */
+  .button-contact:focus {
+    outline: none; /* Remove o contorno padrão */
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.5); /* Adiciona um brilho */
+  }
+  /* Estilo apenas para o botão "Me contrate" */
+.me-contrate-btn {
+    text-decoration: none;  /* Remove o sublinhado */
+    color: white;           /* Cor do texto branco */
+  }
+  
+  /* Estilo para o botão, se necessário */
+  .c-btn.h-btn .me-contrate-btn {
+    color: inherit;         /* Garante que o link tenha a cor do botão */
+  }
+  .social-links button:focus,
+.social-links a:focus {
+  outline: none;
+  border: none; /* Remove qualquer borda ao focar */
+  box-shadow: none; /* Remove qualquer sombra de foco */
+}
+.social-links button {
+    display: inline-flex;  /* Garante que os botões fiquem na mesma linha */
+    justify-content: center;
+    align-items: center;
+    width: 50px;  /* Tamanho ajustado para os botões */
+    height: 50px; /* Tamanho ajustado para os botões */
+    border-radius: 50%; /* Torna os botões redondos */
+    background-color: transparent; /* Remove o fundo */
+    border: 2px solid #ddd; /* Borda fina para o botão */
+    margin: 10px; /* Ajuste a margem entre os botões */
+    transition: all 0.3s ease; /* Mantém a animação suave */
+  }
+  
+  .social-links button:hover {
+    transform: scale(1.1); /* Efeito de aumento ao passar o mouse */
+    border-color: #ddd; /* Cor da borda ao passar o mouse */
+  }
+  
+  .social-links button i {
+    font-size: 1.5rem; /* Tamanho do ícone */
+    color: inherit; /* Cor do ícone conforme o botão */
+  }
+  
+  /* Definindo as cores específicas para cada rede social */
+  .social-links .dribble a i {
+    color: #E1306C; /* Cor do Instagram */
+  }
+  
+  .social-links .whatsapp a i {
+    color: #25D366; /* Cor do WhatsApp */
+  }
+  
+  .social-links .behance a i {
+    color: #1DA1F2; /* Cor do Twitter */
+  }
+  
+  * {
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden; /* Impede a rolagem horizontal */
+}
+/* Garante que TODAS as seções sigam o layout 2 em 2 */
+/* Garante que os cards fiquem em 2 colunas mesmo em telas grandes */
+.portfolio-body .row > div,
+.design .row > div,
+.app .row > div,
+.website .row > div {
+  flex: 0 0 48%;
+  max-width: 48%;
+  margin-bottom: 20px;
+}
+
+/* Em telas pequenas (celulares), volta pra 1 por linha */
+@media (max-width: 768px) {
+  .portfolio-body .row > div,
+  .design .row > div,
+  .app .row > div,
+  .website .row > div {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+
+.card-img-top {
+  width: 100%;
+  height: 200px; /* Deixa tudo com o mesmo tamanho visual */
+  object-fit: cover; /* Centraliza e corta a imagem proporcionalmente */
+  border: none !important; /* Remove borda */
+  box-shadow: none !important; /* Remove sombra */
+}
+/* Remove qualquer borda/sombra das divs de cards */
+.card {
+  border: none !important;
+  box-shadow: none !important;
+  background-color: transparent !important;
+}
+.card-img-top {
+  object-fit: cover; /* Mantém a proporção da imagem sem distorcer */
+  width: 100%; /* A largura da imagem será igual à largura da div */
+  height: 250px; /* Ajuste a altura para ser um pouco menor que a largura, criando um efeito achatado */
+}
+
+
+  
